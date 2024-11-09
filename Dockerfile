@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . .
 RUN make linux
 
-FROM alpine:3.12
+FROM alpine:3.17.10
 # Dependencies
 RUN apk --no-cache add tzdata ca-certificates musl
 # where application lives
